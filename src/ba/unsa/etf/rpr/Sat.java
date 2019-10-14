@@ -1,6 +1,7 @@
 package ba.unsa.etf.rpr;
 
 public class Sat {
+    // klasa sat
     private int sati, minute, sekunde;
 
     public Sat(int sati, int minute, int sekunde) {
@@ -42,8 +43,10 @@ public class Sat {
     }
 
     public void pomjeriZa(int pomak) {
-        if (pomak > 0) for (int i = 0; i < pomak; i++) sljedeci();
-        else for (int i = 0; i < -pomak; i++) prethodni();
+        if (pomak > 0)
+            for (int i = 0; i < pomak; i++) sljedeci();
+        else
+            for (int i = 0; i < -pomak; i++) prethodni();
     }
 
     public int dajSate() {
